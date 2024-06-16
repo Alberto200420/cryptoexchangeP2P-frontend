@@ -18,7 +18,7 @@ export default async function InfoConfirm({ slug }: InfoConfirmProps) {
     <div className="flex flex-col items-center">
       <div className="text-sm">
         <div className="mb-2">
-          <strong>Referencia:</strong> { data.reference ? data.reference : 'N/A' }
+          <strong>Referencia:</strong> { data.reference ? data.reference : <p>N/A</p> }
         </div>
         <div className="mb-2">
           <strong>Banco a transferir:</strong> {data.bankEntity}
@@ -40,7 +40,7 @@ export default async function InfoConfirm({ slug }: InfoConfirmProps) {
         <div className="pb-8">
           <strong>Voucher:</strong>
           <div className="mt-2">
-            <img src={`${process.env.NEXT_PUBLIC_APP_API_URL}${data.voucher}`} alt="Voucher" className="w-full h-auto rounded" />
+            <img src={`${process.env.NEXT_PUBLIC_MEDIA_API_URL}${data.voucher}`} alt="Voucher" className="w-full h-auto rounded" />
           </div>
         </div>
       )}

@@ -59,7 +59,7 @@ export default async function DetailsDashboard() {
             </div>
           </div>
           <div className="text-xs mb-2">
-            <div><strong>Referencia:</strong> {sale.reference ? sale.reference : 'N/A'}</div>
+            <div><strong>Referencia:</strong> {sale.reference ? sale.reference : <p>N/A</p>}</div>
             <div><strong>Banco:</strong> {sale.bankEntity}</div>
             <div><strong>Address:</strong> {sale.address}</div>
             <div className="flex items-center"><strong>Balance:</strong> <JustBalance address={sale.address} /></div>

@@ -40,7 +40,7 @@ export default function HeaderData() {
         ? 
         `${bitcoinPrice.toLocaleString('es-MX', { minimumFractionDigits: 2, maximumFractionDigits: 2 })} MXN`
         :
-        'Getting price...'
+        <p>Getting price...</p>
         }</span>
       </div>
     </div>

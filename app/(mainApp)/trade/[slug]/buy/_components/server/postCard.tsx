@@ -27,7 +27,7 @@ const PostCard: NextPage<Props> = ({ sale }) => {
               <p className="break-words">{sale.address}</p>
               <p><strong>Bank to transfer: </strong>{sale.bankEntity}</p>
               <p><strong>Creation date: </strong>{new Date(sale.created_at).toLocaleString()}</p>
-              <p><strong>Reference:</strong> {sale.reference ? sale.reference : 'N/A'}</p>
+              <p><strong>Reference:</strong> {sale.reference ? sale.reference : <p>N/A</p>}</p>
             </div>
           </div>
           <GetBtcBalance address={sale.address} dashboard={false}/>

@@ -55,12 +55,12 @@ export default async function MiPruchases() {
             </div>
           </div>
           <div className="text-xs mb-2">
-            <div><strong>Referencia:</strong> {sale.reference ? sale.reference : 'N/A'}</div>
+            <div><strong>Referencia:</strong> {sale.reference ? sale.reference : <p>N/A</p>}</div>
             <div><strong>Banco:</strong> {sale.bankEntity}</div>
             <div><strong>Address:</strong> {sale.address}</div>
             <div><strong>Purchase price:</strong> {sale.bitcoin_value} MXN</div>
-            <div><strong>Date of purchase:</strong> {sale.buyed_at ? new Date(sale.buyed_at).toLocaleString() : 'No date'}</div>
-            <div>{sale.has_comment ? 'TIENE COMENTARIO' : 'No tiene comentario'}</div>
+            <div><strong>Date of purchase:</strong> {sale.buyed_at ? new Date(sale.buyed_at).toLocaleString() : <p>No date</p>}</div>
+            {/* <div>{sale.has_comment ? 'TIENE COMENTARIO' : <p> No tiene comentario</p>}</div> */}
           </div>
           <div className="flex items-center justify-between">
             <div></div>
