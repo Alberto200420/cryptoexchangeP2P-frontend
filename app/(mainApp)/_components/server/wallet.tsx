@@ -170,7 +170,7 @@ export default function Wallet() {
                       { txid ?
                       <div className="mt-4">
                         <a
-                          href={`https://mempool.space/testnet/tx/${txid}`}
+                          href={`https://mempool.space/tx/${txid}`}
                           target="_blank"
                           rel="noopener noreferrer"
                           className="text-blue-600 hover:underline"
