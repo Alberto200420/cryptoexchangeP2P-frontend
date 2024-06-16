@@ -22,7 +22,7 @@ export default function JustBalance({address}: JustBalanceProps) {
     }
 
     fetchData();
-  }, []);
+  }, [address]);
 
   return <p> {btcBalance} - BTC / {nxmBalance.toFixed(2)} - MXN</p>
 

@@ -53,7 +53,7 @@ export default function Page({ params }: Props) {
       setToken(token);
       setUID(uid);
     }
-	}, []);
+	}, [params]);
 
 	return (
     <div className="pt-32  px-4 py-8 sm:px-6">

@@ -45,7 +45,7 @@ export default function GetBtcBalance({ address, dashboard }: PropsPage) {
         clearInterval(intervalId);
       }
     };
-  }, [address]);
+  }, [address, dashboard]);
 
   return (
     <div className="sm:w-auto sm:ml-auto text-center">

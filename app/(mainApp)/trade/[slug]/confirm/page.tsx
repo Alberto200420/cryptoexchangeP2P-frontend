@@ -19,20 +19,20 @@ export default function Page({ params }: SlugParam) {
             <BuildingLibraryIcon width={30} height={40}/>
             <div className="pl-2">
               <p className="font-semibold text-sm">Check with your bank if the deposit was made by the buyer</p>
-              <p className="text-gray-500 text-sm">You can see the receipt by clicking on "payment receipt"</p>
+              <p className="text-gray-500 text-sm">You can see the receipt by clicking on &quot;payment receipt&quot;</p>
             </div>
           </div>
           <div className="flex items-start space-x-2">
             <ClipboardDocumentCheckIcon width={30} height={40}/>
             <div className="pl-2">
-              <p className="font-semibold text-sm">The deposit has to match "bitcoin value"</p>
-              <p className="text-gray-500 text-sm">If you see any problems, do not hesitate to click on "report buyer"</p>
+              <p className="font-semibold text-sm">The deposit has to match &quot;bitcoin value&quot;</p>
+              <p className="text-gray-500 text-sm">If you see any problems, do not hesitate to click on &quot;report buyer&quot;</p>
             </div>
           </div>
           <div className="flex items-start space-x-2">
             <CheckCircleIcon width={35} height={45}/>
             <div className="pl-2">
-              <p className="font-semibold text-sm">Click on the "confirm sale" button</p>
+              <p className="font-semibold text-sm">Click on the &quot;confirm sale&quot; button</p>
               <p className="text-gray-500 text-sm">Ready you have completed the transaction</p>
             </div>
           </div>
