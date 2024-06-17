@@ -70,7 +70,7 @@ export async function fetchBTCPrices(): Promise<BTCPrices> {
   return prices;
 }
 
-async function calculateAverageUSDPrice(prices: BTCPrices): Promise<number> {
+export async function calculateAverageUSDPrice(prices: BTCPrices): Promise<number> {
   const { usdPriceMempool, priceCoinbase, priceUsdCoinlore, usdPriceCryptocompare, priceUsdCoinmarketcap } = prices;
 
   const validPrices = [usdPriceMempool, priceCoinbase, priceUsdCoinlore, usdPriceCryptocompare, priceUsdCoinmarketcap].filter(price => price !== null) as number[];

@@ -10,15 +10,19 @@ export default function BitcoinPrice() {
   useEffect(() => {
     const fetchPrice = async () => {
       try {
-        let price = await calcularPrecioBTCenMXN();
-        setBitcoinPrice(price);
+        const response  = await fetch('/api/btc-price', { method: 'GET' });
+        if (!response.ok) {
+          throw new Error('Network response was not ok');
+        }
+        const data = await response.json();
+        setBitcoinPrice(data.price);
       } catch (error) {
         console.error('Error fetching BTC price:', error);
       }
     };
 
     fetchPrice();
-    const interval = setInterval(fetchPrice, 20000);
+    const interval = setInterval(fetchPrice, 40000);
 
     return () => clearInterval(interval);
   }, []);
