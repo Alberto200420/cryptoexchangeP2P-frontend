@@ -231,8 +231,8 @@ export async function convertirBTC(cantidadBTC: number, precioUnitarioBTC: numbe
 
 export async function getTotalBalanceInBTC(address: string): Promise<number> {
   try {
-    // const response = await fetch(`https://mempool.space/api/address/${address}/utxo`);
-    const response = await fetch(`https://mempool.space/testnet/api/address/${address}/utxo`);
+    const response = await fetch(`https://mempool.space/api/address/${address}/utxo`);
+    // const response = await fetch(`https://mempool.space/testnet/api/address/${address}/utxo`);
     
     if (!response.ok) {
       throw new Error(`Error fetching data: ${response.statusText}`);

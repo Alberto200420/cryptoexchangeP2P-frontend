@@ -19,7 +19,7 @@ export async function POST(request: Request) {
   body.append('slug', slug);
   body.append('voucher', voucher);
   body.append('bitcoin_value', bitcoin_value);
-  console.log(body, 'FROM POST body server')
+
   try {
     const res = await fetch(`${process.env.NEXT_PUBLIC_APP_API_URL}/sale/take-offer/`, {
       method: 'PUT',
