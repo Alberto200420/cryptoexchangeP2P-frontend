@@ -70,7 +70,7 @@ export async function fetchBTCPrices(): Promise<BTCPrices> {
   return prices;
 }
 
-async function calculateAverageUSDPrice(prices: BTCPrices): Promise<number> {
+export async function calculateAverageUSDPrice(prices: BTCPrices): Promise<number> {
   const { usdPriceMempool, priceCoinbase, priceUsdCoinlore, usdPriceCryptocompare, priceUsdCoinmarketcap } = prices;
 
   const validPrices = [usdPriceMempool, priceCoinbase, priceUsdCoinlore, usdPriceCryptocompare, priceUsdCoinmarketcap].filter(price => price !== null) as number[];
@@ -195,7 +195,7 @@ export async function fetchFastestFee(): Promise<number> {
     }
     const data = await response.json();
     const fastestFeeSatoshi = data.fastestFee;
-    const segwitTransaction = 140 * fastestFeeSatoshi;
+    const segwitTransaction = 109 * fastestFeeSatoshi;
     const fastestFeeInBTC = 0.00000001 * segwitTransaction;
 
     // URL de la API de CoinMarketCap para obtener el precio de 1 BTC en MXN
@@ -231,7 +231,8 @@ export async function convertirBTC(cantidadBTC: number, precioUnitarioBTC: numbe
 
 export async function getTotalBalanceInBTC(address: string): Promise<number> {
   try {
-    const response = await fetch(`https://mempool.space/api/address/${address}/utxo`);
+    // const response = await fetch(`https://mempool.space/api/address/${address}/utxo`);
+    const response = await fetch(`https://mempool.space/testnet/api/address/${address}/utxo`);
     
     if (!response.ok) {
       throw new Error(`Error fetching data: ${response.statusText}`);
