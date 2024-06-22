@@ -1,6 +1,7 @@
 import { Sale } from "@/utils/interfaces";
 import { getSaleOwnerPost } from "@/utils/functions";
 import ReportComment from "@/components/client/reportComment";
+import Image from "next/image";
 
 interface InfoConfirmProps {
   slug: string;
@@ -40,7 +41,7 @@ export default async function InfoConfirm({ slug }: InfoConfirmProps) {
         <div className="pb-8">
           <strong>Voucher:</strong>
           <div className="mt-2">
-            <img src={`${process.env.NEXT_PUBLIC_MEDIA_API_URL}${data.voucher}`} alt="Voucher" className="w-full h-auto rounded" />
+            <Image src={`${process.env.NEXT_PUBLIC_MEDIA_API_URL}${data.voucher}`} alt="Voucher" className="w-full h-auto rounded" />
           </div>
         </div>
       )}

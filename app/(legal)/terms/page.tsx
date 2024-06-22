@@ -21,13 +21,13 @@ export default function TermsPage() {
             <strong>Bitcoin Deposit:</strong> To sell Bitcoin, you must transfer it to a Bitcoin address belonging to CryptoExchangeP2P.com.
           </li>
           <li>
-            <strong>Seller's Information:</strong> As a seller, you must provide your banking details and other required information so that the buyer can deposit money into your desired bank account.
+            <strong>Seller&apos;s Information:</strong> As a seller, you must provide your banking details and other required information so that the buyer can deposit money into your desired bank account.
           </li>
           <li>
-            <strong>Offer Acceptance:</strong> The Bitcoin price is set by the platform based on the real-time market price, not by the seller. You must accept the buyer's offer to proceed with the transaction.
+            <strong>Offer Acceptance:</strong> The Bitcoin price is set by the platform based on the real-time market price, not by the seller. You must accept the buyer&apos;s offer to proceed with the transaction.
           </li>
           <li>
-            <strong>Transaction:</strong> The buyer will deposit the agreed amount of money into the seller's bank account in the currency of the country where the sale is made.
+            <strong>Transaction:</strong> The buyer will deposit the agreed amount of money into the seller&apos;s bank account in the currency of the country where the sale is made.
           </li>
           <li>
             <strong>Bitcoin Release:</strong> Once the seller confirms the receipt of money in their bank account, they must release the Bitcoin. It will be reflected in their CryptoExchangeP2P.com wallet.
@@ -75,7 +75,7 @@ export default function TermsPage() {
       <section className="mb-6">
         <h2 className="text-xl font-semibold mb-2">10. Governing Law and Jurisdiction</h2>
         <p>
-          These Terms and Conditions will be governed and interpreted in accordance with the laws of the country in which you reside. Any dispute arising in connection with these terms will be resolved in the competent courts of the user's country of residence.
+          These Terms and Conditions will be governed and interpreted in accordance with the laws of the country in which you reside. Any dispute arising in connection with these terms will be resolved in the competent courts of the user&apos;s country of residence.
         </p>
       </section>
       <section className="mb-6">
