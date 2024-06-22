@@ -5,6 +5,7 @@ import Sell from '@/components/assets/Crypto Exchange P2P selling.png'
 import BuyView from '@/components/assets/Crypto Exchange P2P Buy.png'
 import Image from "next/image";
 import GetStarted from "@/components/client/getStarted";
+import Link from "next/link";
 // import { Footer } from "@/components/server";
 
 export default function Page() {
@@ -39,9 +40,9 @@ export default function Page() {
 
               <div className="mt-10 flex items-center justify-center gap-x-6">
                 <GetStarted />
-                <a href="#" className="text-sm font-semibold leading-6">
-                  Learn more <span aria-hidden="true">→</span>
-                </a>
+                <Link href="/about" className="text-sm font-semibold leading-6">
+                  About  us <span aria-hidden="true">→</span>
+                </Link>
               </div>
             </div>
           </div>
@@ -136,18 +137,18 @@ export default function Page() {
                 </svg>
                 <div className="mx-auto max-w-md text-center lg:mx-0 lg:flex-auto lg:py-32 lg:text-left">
                   <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
-                    Boost your productivity.
+                    The best way to buy and sell.
                     <br />
                     Start using our app today.
                   </h2>
                   <p className="mt-6 text-lg leading-8 text-gray-300">
-                    Ac euismod vel sit maecenas id pellentesque eu sed consectetur. Malesuada adipiscing sagittis vel nulla.
+                  Buy and sell fairly, safely and easily. Find post from the bitcoin community.
                   </p>
                   <div className="mt-10 flex items-center justify-center gap-x-6 lg:justify-start">
                     < GetStarted />
-                    <a href="#" className="text-sm font-semibold leading-6 text-white">
-                      Learn more <span aria-hidden="true">→</span>
-                    </a>
+                    <Link href="/about" className="text-sm font-semibold leading-6 text-white">
+                      About us <span aria-hidden="true">→</span>
+                    </Link >
                   </div>
                 </div>
                 <div className="relative mt-16 h-80 lg:mt-8">
