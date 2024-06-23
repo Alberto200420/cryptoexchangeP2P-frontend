@@ -119,6 +119,16 @@ export default function Page() {
               </div>
             </div>
           </div>
+          <div className="flex justify-center py-10">
+            <a
+              href="https://chat.whatsapp.com/H67A0A0ZCWHGcjqA3qdy5u"
+              className="text-lg font-semibold text-blue-600 underline"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Join the WhatsApp community and agree to exchange with another user
+            </a>
+          </div>
           <div className="pt-20">
             <div className="mx-auto max-w-7xl sm:px-6 lg:px-8 pb-12">
               <div className="relative isolate overflow-hidden bg-gray-900 px-6 pt-16 shadow-2xl sm:rounded-3xl sm:px-16 md:pt-24 lg:flex lg:gap-x-20 lg:px-24 lg:pt-0">
