@@ -18,10 +18,10 @@ export default function Page() {
           
             <div className="text-center">
               <h1 className="text-4xl font-bold tracking-tight sm:text-6xl">
-                P2P Cryptocurrency Exchange Patform
+                We connect buyers and sellers to exchange Bitcoin directly
               </h1>
               <p className="mt-6 text-lg leading-8">
-              without high commissions for withdrawing your cryptocurrenies
+              <strong>without high commissions</strong> for withdrawing your cryptocurrenies
               </p>
               <p className="text-lg leading-8">
               Find buyers from your country and sell your cryptocurrencies for fiat money
@@ -30,8 +30,19 @@ export default function Page() {
               Find sellers from your country and buy cryptocurrencies for fiat money
               </p>
               <p className="text-lg leading-8">
-              Buy and sell at market price
+              <strong>Buy and sell at market price</strong>
               </p>
+
+              <div className="flex justify-center py-10">
+                <a
+                  href="https://chat.whatsapp.com/H67A0A0ZCWHGcjqA3qdy5u"
+                  className="text-lg font-semibold text-blue-600 underline"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Join the WhatsApp community and agree to exchange with another user
+                </a>
+              </div>
 
               {/* Codigo aqui */}
               <div className="my-6">
