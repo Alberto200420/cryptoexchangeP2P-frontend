@@ -174,7 +174,23 @@ export default function Page() {
             </div>
           </div>
         </div>
-        {/* <Footer/> */}
+        <footer className="bg-white text-black p-4 text-center">
+          <div className="mb-4 flex justify-center space-x-6">
+            <Link href="/about" className="text-gray-500 hover:text-gray-800">
+              About
+            </Link>
+            <Link href="/privacy" className="text-gray-500 hover:text-gray-800">
+              Privacy
+            </Link>
+            <Link href="/terms" className="text-gray-500 hover:text-gray-800">
+              Terms
+            </Link>
+            <Link href="/contact" className="text-gray-500 hover:text-gray-800">
+              Contact
+            </Link>
+          </div>
+          <p className="text-gray-400">exchangep2p&copy; 2024</p>
+        </footer>
       </main>
     </>
   );
