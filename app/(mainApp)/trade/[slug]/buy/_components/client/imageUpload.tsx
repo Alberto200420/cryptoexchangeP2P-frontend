@@ -7,6 +7,7 @@ import { useRouter } from 'next/navigation';
 import { toast } from 'react-toastify';
 import { MoonLoader } from 'react-spinners';
 import { TakeOffer } from '@/utils/interfaces';
+import Image from 'next/image';
 
 export default function ImageUpload({ slug }: TakeOffer) {
   const [voucher, setVoucher] = useState<File | null>(null);
@@ -85,7 +86,7 @@ export default function ImageUpload({ slug }: TakeOffer) {
           </label>
           <div className="mt-2 flex items-center gap-x-3">
             {previewImage && (
-              <img src={typeof previewImage === 'string' ? previewImage : ''} alt="Uploaded Preview" className="h-12 w-12 object-cover rounded-full" />
+              <Image src={typeof previewImage === 'string' ? previewImage : ''} alt="Uploaded Preview" className="h-12 w-12 object-cover rounded-full" />
             )}
             <button
               type="button"

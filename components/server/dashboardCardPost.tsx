@@ -10,7 +10,17 @@ export default async function DashboardCardPost() {
 
   if(!data.length) {
     return(
-      <div>There are no posts created, create one!!</div>
+      <div className="flex justify-center py-10">
+        <h1>There are no posts created, create one!!</h1>
+        <a
+          href="https://chat.whatsapp.com/H67A0A0ZCWHGcjqA3qdy5u"
+          className="text-lg font-semibold text-blue-600 underline"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Join the WhatsApp community and agree to exchange with another user
+        </a>
+      </div>
     )
   }
 

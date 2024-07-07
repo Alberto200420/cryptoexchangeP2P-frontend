@@ -195,7 +195,7 @@ export async function fetchFastestFee(): Promise<number> {
     }
     const data = await response.json();
     const fastestFeeSatoshi = data.fastestFee;
-    const segwitTransaction = 140 * fastestFeeSatoshi;
+    const segwitTransaction = 109 * fastestFeeSatoshi;
     const fastestFeeInBTC = 0.00000001 * segwitTransaction;
 
     // URL de la API de CoinMarketCap para obtener el precio de 1 BTC en MXN
@@ -232,6 +232,7 @@ export async function convertirBTC(cantidadBTC: number, precioUnitarioBTC: numbe
 export async function getTotalBalanceInBTC(address: string): Promise<number> {
   try {
     const response = await fetch(`https://mempool.space/api/address/${address}/utxo`);
+    // const response = await fetch(`https://mempool.space/testnet/api/address/${address}/utxo`);
     
     if (!response.ok) {
       throw new Error(`Error fetching data: ${response.statusText}`);
@@ -322,7 +323,7 @@ export async function getPostListDashboard() {
   const res = await fetch(`${process.env.NEXT_PUBLIC_APP_API_URL}/sale/get-sale-list`, {
     method: 'GET',
     headers: {
-      'Content-Type': 'application/json',
+      // 'Content-Type': 'application/json',
       'Authorization': `Bearer ${accessCookie}`
     }
   });
@@ -346,7 +347,7 @@ export async function getDashboardOwnertList() {
   const res = await fetch(`${process.env.NEXT_PUBLIC_APP_API_URL}/sale/get-dashboard-owned-list`, {
     method: 'GET',
     headers: {
-      'Content-Type': 'application/json',
+      // 'Content-Type': 'application/json',
       'Authorization': `Bearer ${accessCookie}`
     }
   });
@@ -374,7 +375,7 @@ export async function getPurchasedSalesList() {
   const res = await fetch(`${process.env.NEXT_PUBLIC_APP_API_URL}/sale/get-purchases-list`, {
     method: 'GET',
     headers: {
-      'Content-Type': 'application/json',
+      // 'Content-Type': 'application/json',
       'Authorization': `Bearer ${accessCookie}`
     }
   });
@@ -402,7 +403,7 @@ export async function getPostData(slug: string) {
   const res = await fetch(`${process.env.NEXT_PUBLIC_APP_API_URL}/sale/get?slug=${slug}`, {
     method: 'GET',
     headers: {
-      'Content-Type': 'application/json',
+      // 'Content-Type': 'application/json',
       'Authorization': `Bearer ${accessCookie}`
     },
     cache: 'force-cache', // Forzar el uso de caché

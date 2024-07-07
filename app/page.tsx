@@ -5,6 +5,7 @@ import Sell from '@/components/assets/Crypto Exchange P2P selling.png'
 import BuyView from '@/components/assets/Crypto Exchange P2P Buy.png'
 import Image from "next/image";
 import GetStarted from "@/components/client/getStarted";
+import Link from "next/link";
 // import { Footer } from "@/components/server";
 
 export default function Page() {
@@ -17,10 +18,10 @@ export default function Page() {
           
             <div className="text-center">
               <h1 className="text-4xl font-bold tracking-tight sm:text-6xl">
-                P2P Cryptocurrency Exchange Patform
+                We connect buyers and sellers to exchange Bitcoin directly
               </h1>
               <p className="mt-6 text-lg leading-8">
-              without high commissions for withdrawing your cryptocurrenies
+              <strong>without high commissions</strong> for withdrawing your cryptocurrenies
               </p>
               <p className="text-lg leading-8">
               Find buyers from your country and sell your cryptocurrencies for fiat money
@@ -29,8 +30,19 @@ export default function Page() {
               Find sellers from your country and buy cryptocurrencies for fiat money
               </p>
               <p className="text-lg leading-8">
-              Buy and sell at market price
+              <strong>Buy and sell at market price</strong>
               </p>
+
+              <div className="flex justify-center py-10">
+                <a
+                  href="https://chat.whatsapp.com/H67A0A0ZCWHGcjqA3qdy5u"
+                  className="text-lg font-semibold text-blue-600 underline"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Join the WhatsApp community and agree to exchange with another user
+                </a>
+              </div>
 
               {/* Codigo aqui */}
               <div className="my-6">
@@ -39,9 +51,9 @@ export default function Page() {
 
               <div className="mt-10 flex items-center justify-center gap-x-6">
                 <GetStarted />
-                <a href="#" className="text-sm font-semibold leading-6">
-                  Learn more <span aria-hidden="true">→</span>
-                </a>
+                <Link href="/about" className="text-sm font-semibold leading-6">
+                  About  us <span aria-hidden="true">→</span>
+                </Link>
               </div>
             </div>
           </div>
@@ -118,6 +130,16 @@ export default function Page() {
               </div>
             </div>
           </div>
+          <div className="flex justify-center py-10">
+            <a
+              href="https://chat.whatsapp.com/H67A0A0ZCWHGcjqA3qdy5u"
+              className="text-lg font-semibold text-blue-600 underline"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Join the WhatsApp community and agree to exchange with another user
+            </a>
+          </div>
           <div className="pt-20">
             <div className="mx-auto max-w-7xl sm:px-6 lg:px-8 pb-12">
               <div className="relative isolate overflow-hidden bg-gray-900 px-6 pt-16 shadow-2xl sm:rounded-3xl sm:px-16 md:pt-24 lg:flex lg:gap-x-20 lg:px-24 lg:pt-0">
@@ -136,18 +158,18 @@ export default function Page() {
                 </svg>
                 <div className="mx-auto max-w-md text-center lg:mx-0 lg:flex-auto lg:py-32 lg:text-left">
                   <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
-                    Boost your productivity.
+                    The best way to buy and sell.
                     <br />
                     Start using our app today.
                   </h2>
                   <p className="mt-6 text-lg leading-8 text-gray-300">
-                    Ac euismod vel sit maecenas id pellentesque eu sed consectetur. Malesuada adipiscing sagittis vel nulla.
+                  Buy and sell fairly, safely and easily. Find post from the bitcoin community.
                   </p>
                   <div className="mt-10 flex items-center justify-center gap-x-6 lg:justify-start">
                     < GetStarted />
-                    <a href="#" className="text-sm font-semibold leading-6 text-white">
-                      Learn more <span aria-hidden="true">→</span>
-                    </a>
+                    <Link href="/about" className="text-sm font-semibold leading-6 text-white">
+                      About us <span aria-hidden="true">→</span>
+                    </Link >
                   </div>
                 </div>
                 <div className="relative mt-16 h-80 lg:mt-8">
@@ -163,7 +185,23 @@ export default function Page() {
             </div>
           </div>
         </div>
-        {/* <Footer/> */}
+        <footer className="bg-white text-black p-4 text-center">
+          <div className="mb-4 flex justify-center space-x-6">
+            <Link href="/about" className="text-gray-500 hover:text-gray-800">
+              About
+            </Link>
+            <Link href="/privacy" className="text-gray-500 hover:text-gray-800">
+              Privacy
+            </Link>
+            <Link href="/terms" className="text-gray-500 hover:text-gray-800">
+              Terms
+            </Link>
+            <Link href="/contact" className="text-gray-500 hover:text-gray-800">
+              Contact
+            </Link>
+          </div>
+          <p className="text-gray-400">exchangep2p&copy; 2024</p>
+        </footer>
       </main>
     </>
   );
