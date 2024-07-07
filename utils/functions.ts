@@ -148,6 +148,10 @@ export async function formCreateSalePost(formData: FormData) {
   const privacyPolicy = formData.privacyPolicy;
   const reference = formData.reference;
 
+  if (formData.accountNumber.length > 19) {
+    return { error: 'Account number must not exceed 19 characters', status: 400 };
+  }
+
   // Validación adicional
   if (isNaN(accountNumber)) {
     return { error: 'Account number must be a number', status: 400 };
