@@ -323,7 +323,7 @@ export async function getPostListDashboard() {
   const res = await fetch(`${process.env.NEXT_PUBLIC_APP_API_URL}/sale/get-sale-list`, {
     method: 'GET',
     headers: {
-      'Content-Type': 'application/json',
+      // 'Content-Type': 'application/json',
       'Authorization': `Bearer ${accessCookie}`
     }
   });
@@ -347,7 +347,7 @@ export async function getDashboardOwnertList() {
   const res = await fetch(`${process.env.NEXT_PUBLIC_APP_API_URL}/sale/get-dashboard-owned-list`, {
     method: 'GET',
     headers: {
-      'Content-Type': 'application/json',
+      // 'Content-Type': 'application/json',
       'Authorization': `Bearer ${accessCookie}`
     }
   });
@@ -375,7 +375,7 @@ export async function getPurchasedSalesList() {
   const res = await fetch(`${process.env.NEXT_PUBLIC_APP_API_URL}/sale/get-purchases-list`, {
     method: 'GET',
     headers: {
-      'Content-Type': 'application/json',
+      // 'Content-Type': 'application/json',
       'Authorization': `Bearer ${accessCookie}`
     }
   });
@@ -403,7 +403,7 @@ export async function getPostData(slug: string) {
   const res = await fetch(`${process.env.NEXT_PUBLIC_APP_API_URL}/sale/get?slug=${slug}`, {
     method: 'GET',
     headers: {
-      'Content-Type': 'application/json',
+      // 'Content-Type': 'application/json',
       'Authorization': `Bearer ${accessCookie}`
     },
     cache: 'force-cache', // Forzar el uso de caché
