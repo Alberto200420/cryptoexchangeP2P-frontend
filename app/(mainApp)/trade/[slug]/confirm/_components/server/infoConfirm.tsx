@@ -41,7 +41,7 @@ export default async function InfoConfirm({ slug }: InfoConfirmProps) {
         <div className="pb-8">
           <strong>Voucher:</strong>
           <div className="mt-2">
-            <Image src={`${process.env.NEXT_PUBLIC_MEDIA_API_URL}/media/${data.voucher}`} alt="Voucher" className="w-full h-auto rounded" />
+            <Image src={`${data.voucher}`} alt="Voucher" className="w-full h-auto rounded" />
           </div>
         </div>
       )}
