@@ -76,13 +76,15 @@ export default function Page() {
                   </div>
                 </div>
                 <div className="flex items-start justify-end lg:order-first">
-                  <Image
-                    src={Buy}
-                    alt="Comprar bitcoin"
-                    className="w-[30rem] max-w-none rounded-xl shadow-xl ring-1 ring-gray-400/10 sm:w-[37rem]"
-                    width={2432}
-                    height={1442}
-                  />
+                  <iframe 
+                    width="560" 
+                    height="315"
+                    src="https://www.youtube.com/embed/WmfDGkC8VSs?si=x9bV-sSaiPTNJ0Ln" 
+                    title="YouTube video player"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    referrerPolicy="strict-origin-when-cross-origin" 
+                    allowFullScreen
+                  ></iframe>
                 </div>
               </div>
             </div>
@@ -107,13 +109,15 @@ export default function Page() {
                 {' '}
                 {/* Added 'items-center' class */}
                 <div className="lg:ml-auto lg:pl-4 lg:pt-4">
-                  <Image
-                    src={Sell}
-                    alt="Product screenshot"
-                    className="w-[30rem] max-w-none rounded-xl shadow-xl ring-1 ring-gray-400/10 sm:w-[37rem]"
-                    width={2432}
-                    height={1442}
-                  />
+                  <iframe 
+                    width="560" 
+                    height="315" 
+                    src="https://www.youtube.com/embed/-eTzxlNlOY8?si=mKuuoPUFQ4_IcYU-" 
+                    title="YouTube video player"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    referrerPolicy="strict-origin-when-cross-origin" 
+                    allowFullScreen
+                  ></iframe>
                 </div>
                 <div className="flex items-start justify-end lg:order-first">
                   <div className="lg:max-w-lg">
