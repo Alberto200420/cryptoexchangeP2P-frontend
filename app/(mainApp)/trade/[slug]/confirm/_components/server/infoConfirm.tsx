@@ -41,7 +41,8 @@ export default async function InfoConfirm({ slug }: InfoConfirmProps) {
         <div className="pb-8">
           <strong>Voucher:</strong>
           <div className="mt-2">
-            <Image src={`${data.voucher}`} alt="Voucher" className="w-full h-auto rounded" />
+            {/* <Image src={`${data.voucher}`} alt="Voucher" className="w-full h-auto rounded" /> */}
+            <Image src={data.voucher} alt="Voucher" width={500} height={300} className="w-full h-auto rounded" />
           </div>
         </div>
       )}
