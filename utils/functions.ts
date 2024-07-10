@@ -199,7 +199,7 @@ export async function fetchFastestFee(): Promise<number> {
     }
     const data = await response.json();
     const fastestFeeSatoshi = data.fastestFee;
-    const segwitTransaction = 109 * fastestFeeSatoshi;
+    const segwitTransaction = 140 * fastestFeeSatoshi;
     const fastestFeeInBTC = 0.00000001 * segwitTransaction;
 
     // URL de la API de CoinMarketCap para obtener el precio de 1 BTC en MXN

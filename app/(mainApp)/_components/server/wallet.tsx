@@ -154,9 +154,9 @@ export default function Wallet() {
                       <DialogTitle as="h3" className="text-base font-semibold leading-6 text-gray-900">
                         Enter the recipient address
                       </DialogTitle>
-                      {/* <div className="mt-2 text-xs text-gray-500">
+                      <div className="mt-2 text-xs text-gray-500">
                         Note: you will be deducted 1 dollar for using the platform
-                      </div> */}
+                      </div>
                       <div className="mt-2 text-xs text-gray-500">
                         Note: check transaction fees before sending your bitcoin
                       </div>
@@ -177,7 +177,7 @@ export default function Wallet() {
                           rel="noopener noreferrer"
                           className="text-blue-600 hover:underline"
                         >
-                          View Transaction on Mempool
+                          View Transaction on the blockchain
                         </a>
                       </div>
                       :

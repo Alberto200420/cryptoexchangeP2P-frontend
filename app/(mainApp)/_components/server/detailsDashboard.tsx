@@ -62,7 +62,7 @@ export default async function DetailsDashboard() {
             <div><strong>Referencia:</strong> {sale.reference ? sale.reference : <p>N/A</p>}</div>
             <div><strong>Banco:</strong> {sale.bankEntity}</div>
             <div><strong>Address:</strong> {sale.address}</div>
-            <div className="flex items-center"><strong>Balance:</strong> <JustBalance address={sale.address} /></div>
+            <div className="flex items-center"><strong>Balance: </strong> <JustBalance address={sale.address} /></div>
             <div><strong>Fecha de creación:</strong> {new Date(sale.created_at).toLocaleString()}</div>
           </div>
           <div className="flex items-center justify-between">

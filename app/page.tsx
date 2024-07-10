@@ -1,12 +1,9 @@
 import { BitcoinPrice, Navbar } from "@/components/client";
 import bitcoinLogo from '@/components/assets/bitcoin.png'
-import Buy from '@/components/assets/Crypto Exchange P2P buy easily.png'
-import Sell from '@/components/assets/Crypto Exchange P2P selling.png'
 import BuyView from '@/components/assets/Crypto Exchange P2P Buy.png'
 import Image from "next/image";
 import GetStarted from "@/components/client/getStarted";
 import Link from "next/link";
-// import { Footer } from "@/components/server";
 
 export default function Page() {
   return (
