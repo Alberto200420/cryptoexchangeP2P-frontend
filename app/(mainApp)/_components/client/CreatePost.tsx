@@ -47,6 +47,10 @@ export default function CreatePost() {
       setIsOpen(true)
       setLoading(false);
       toast.success(response.data);
+      /* 
+       * Comente este codigo para no crashear el servidor no funciona el time.sleep tengo que
+       * migrar a otro tipo de servidor
+      
       try {
         const activateResponse = await activateSale(address);
         if (activateResponse.status === 200) {
@@ -61,6 +65,7 @@ export default function CreatePost() {
       } catch (error) {
         toast.info((`No olvides mandar el bitcoin que deseas vender a ${address}`))
       }
+      */
     }
   };
 
